@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>S.K Interiors</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f8f9fa;
+        }
+        header {
+            background-color: #004d40;
+            color: white;
+            padding: 1rem 2rem;
+        }
+        .navbar-brand img {
+            height: 80px;
+        }
+        .big-logo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem 0;
+        }
+        .big-logo img {
+            max-height: 300px;
+            width: auto;
+            max-width: 90%;
+        }
+        .carousel-item img {
+            max-height: 400px;
+            object-fit: cover;
+            width: 100%;
+        }
+        .tagline {
+            font-style: italic;
+            font-size: 1.2rem;
+            color: #e0f2f1;
+        }
+        .contact-btn {
+            background-color: #e0f2f1;
+            color: #004d40;
+            font-weight: bold;
+        }
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+        }
+        .testimonial-card {
+            border-left: 5px solid #004d40;
+            background-color: white;
+            padding: 1rem;
+            margin-bottom: 1rem;
+        }
+        footer {
+            background-color: #004d40;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+        .legal-links a {
+            color: #e0f2f1;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        .legal-links a:hover {
+            text-decoration: underline;
+        }
+        .whatsapp-link {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #25D366;
+            color: white;
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            text-align: center;
+            font-size: 30px;
+            line-height: 60px;
+            box-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+            z-index: 1000;
+        }
+        .whatsapp-contact {
+            background-color: #25D366;
+            color: white;
+            text-align: center;
+            padding: 2rem 1rem;
+            border-radius: 8px;
+            max-width: 600px;
+            margin: 2rem auto;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+        }
+        .whatsapp-contact i {
+            font-size: 40px;
+            margin-bottom: 1rem;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Big Logo Section -->
+    <div class="big-logo animate__animated animate__fadeInDown">
+        <img src="Logologo.png" alt="S.K Interiors Logo">
+    </div>
+    <div class="mb-4">
+        <img src="SKInteriorLogo.jpeg" alt="S.K Interiors Logo" style="max-height: 15ch;">
+    </div>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top animate__animated animate__fadeIn">
+        <div class="container">
+            <a class="navbar-brand" href="#">S.K Interiors</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div id="navbarContent" class="collapse navbar-collapse">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#testimonials">Testimonials</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#clients">Clients</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Carousel Section -->
+    <div id="carouselExample" class="carousel slide animate__animated animate__fadeIn" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="Decoration.jpeg" class="d-block w-100" alt="Decorative Ceiling">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Elegant Ceiling Solutions</h5>
+                    <p>Crafting spaces with style and functionality.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="PlyMain.jpeg" class="d-block w-100" alt="Plywood Interiors">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Premium Plywood Supply</h5>
+                    <p>Built to last, designed to impress.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="MicaMain.jpeg" class="d-block w-100" alt="Mika Sheets">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Aesthetic Mika Sheets</h5>
+                    <p>Lightweight and elegant solutions for interiors.</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!-- Services Section -->
+    <section id="services" class="container py-5 animate__animated animate__fadeInUp">
+        <h2 class="text-center mb-4 text-primary">Our Services</h2>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card service-card h-100 shadow-sm animate__animated animate__zoomIn">
+                    <div class="card-body">
+                        <h5 class="card-title">False Ceiling Materials</h5>
+                        <p class="card-text">Top quality materials to give your space a stylish and modern ceiling finish.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card service-card h-100 shadow-sm animate__animated animate__zoomIn" style="animation-delay: 0.2s;">
+                    <div class="card-body">
+                        <h5 class="card-title">Plywood Supply</h5>
+                        <p class="card-text">Durable and premium plywood sheets for all kinds of interior and construction needs.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card service-card h-100 shadow-sm animate__animated animate__zoomIn" style="animation-delay: 0.4s;">
+                    <div class="card-body">
+                        <h5 class="card-title">Mika Sheets</h5>
+                        <p class="card-text">Elegant and lightweight mika sheets to enhance aesthetics and insulation.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12 text-center mt-4">
+                <p>We also offer full contracting services to bring your interiors to life with expert craftsmanship and care.</p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Design Gallery Section -->
+<section id="design-gallery" class="container py-5 text-center animate__animated animate__fadeInUp">
+    <h2 class="mb-3">SK Interior's Gallery</h2>
+    <p class="mb-4">Transform your space effortlessly with S.K Interiors — your one-stop solution for complete interior design services.</p>
+
+    <div id="galleryCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <!-- Carousel Items -->
+            <div class="carousel-item active">
+                <img src="Design1.jpeg" class="d-block w-100 rounded" alt="Design 1">
+            </div>
+            <div class="carousel-item">
+                <img src="Design2.jpeg" class="d-block w-100 rounded" alt="Design 2">
+            </div>
+            <div class="carousel-item">
+                <img src="Design3.jpeg" class="d-block w-100 rounded" alt="Design 3">
+            </div>
+            <div class="carousel-item">
+                <img src="Design4.jpeg" class="d-block w-100 rounded" alt="Design 4">
+            </div>
+            <div class="carousel-item">
+                <img src="Design5.jpeg" class="d-block w-100 rounded" alt="Design 5">
+            </div>
+            <div class="carousel-item">
+                <img src="Design6.jpeg" class="d-block w-100 rounded" alt="Design 6">
+            </div>
+            <div class="carousel-item">
+                <img src="Design7.jpeg" class="d-block w-100 rounded" alt="Design 7">
+            </div>
+            <div class="carousel-item">
+                <img src="Design8.jpeg" class="d-block w-100 rounded" alt="Design 8">
+            </div>
+            <div class="carousel-item">
+                <img src="Design9.jpeg" class="d-block w-100 rounded" alt="Design 9">
+            </div>
+            <div class="carousel-item">
+                <img src="Design10.jpeg" class="d-block w-100 rounded" alt="Design 10">
+            </div>
+            <div class="carousel-item">
+                <img src="Design11.jpeg" class="d-block w-100 rounded" alt="Design 11">
+            </div>
+            <div class="carousel-item">
+                <img src="Design12.jpeg" class="d-block w-100 rounded" alt="Design 12">
+            </div>
+            <div class="carousel-item">
+                <img src="Design13.jpeg" class="d-block w-100 rounded" alt="Design 13">
+            </div>
+            <div class="carousel-item">
+                <img src="Design14.jpeg" class="d-block w-100 rounded" alt="Design 14">
+            </div>
+            <div class="carousel-item">
+                <img src="Design15.jpeg" class="d-block w-100 rounded" alt="Design 15">
+            </div>
+            <div class="carousel-item">
+                <img src="Design16.jpeg" class="d-block w-100 rounded" alt="Design 16">
+            </div>
+            <div class="carousel-item">
+                <img src="Design17.jpeg" class="d-block w-100 rounded" alt="Design 17">
+            </div>
+            <div class="carousel-item">
+                <img src="Design18.jpeg" class="d-block w-100 rounded" alt="Design 18">
+            </div>
+            <div class="carousel-item">
+                <img src="Design19.jpeg" class="d-block w-100 rounded" alt="Design 19">
+            </div>
+            <div class="carousel-item">
+                <img src="Design20.jpeg" class="d-block w-100 rounded" alt="Design 20">
+            </div>
+            <div class="carousel-item">
+                <img src="Design21.jpeg" class="d-block w-100 rounded" alt="Design 20">
+            </div>
+            <div class="carousel-item">
+                <img src="Design22.jpeg" class="d-block w-100 rounded" alt="Design 20">
+            </div>
+        </div>
+
+        <!-- Controls -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#galleryCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon bg-dark rounded-circle p-2" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#galleryCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon bg-dark rounded-circle p-2" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</section>
+
+    <!-- Additional Services Section -->
+<section id="additional-services" class="container py-5 animate__animated animate__fadeInUp">
+    <h2 class="text-center mb-5 text-primary">Interior Solution? SK Interiors will craft it for you</h2>
+    <div class="row row-cols-2 row-cols-md-5 g-4 text-center">
+        <div class="col">
+            <i class="bi bi-basket3" style="font-size: 2rem; color: #dc3545;"></i>
+            <p>Modular Kitchen</p>
+        </div>
+        <div class="col">
+            <i class="bi bi-archive" style="font-size: 2rem; color: #dc3545;"></i>
+            <p>Storage and Wardrobe</p>
+        </div>
+        <div class="col">
+            <i class="bi bi-box-seam" style="font-size: 2rem; color: #dc3545;"></i>
+            <p>Crockery Units</p>
+        </div>
+        <div class="col">
+            <i class="bi bi-table" style="font-size: 2rem; color: #dc3545;"></i>
+            <p>Space Saving Furniture</p>
+        </div>
+        <div class="col">
+            <i class="bi bi-tv" style="font-size: 2rem; color: #dc3545;"></i>
+            <p>TV Units</p>
+        </div>
+        <div class="col">
+            <i class="bi bi-person-workspace" style="font-size: 2rem; color: #dc3545;"></i>
+            <p>Study Tables</p>
+        </div>
+        <div class="col">
+            <i class="bi bi-lightbulb" style="font-size: 2rem; color: #dc3545;"></i>
+            <p>False Ceiling</p>
+        </div>
+        <div class="col">
+            <i class="bi bi-lightning" style="font-size: 2rem; color: #dc3545;"></i>
+            <p>Lights</p>
+        </div>
+        <div class="col">
+            <i class="bi bi-card-text" style="font-size: 2rem; color: #dc3545;"></i>
+            <p>Wallpaper</p>
+        </div>
+        <div class="col">
+            <i class="bi bi-brush" style="font-size: 2rem; color: #dc3545;"></i>
+            <p>Wall Paint</p>
+        </div>
+        <div class="col">
+            <i class="bi bi-droplet-half" style="font-size: 2rem; color: #dc3545;"></i>
+            <p>Bathroom</p>
+        </div>
+        <div class="col">
+            <i class="bi bi-lightning-fill" style="font-size: 2rem; color: #dc3545;"></i>
+            <p>Pooja Unit</p>
+        </div>
+        <div class="col">
+            <i class="bi bi-door-closed" style="font-size: 2rem; color: #dc3545;"></i>
+            <p>Foyer Designs</p>
+        </div>
+        <div class="col">
+            <i class="bi bi-table" style="font-size: 2rem; color: #dc3545;"></i>
+            <p>Movable Furniture</p>
+        </div>
+        <div class="col">
+            <i class="bi bi-people-fill" style="font-size: 2rem; color: #dc3545;"></i>
+            <p>Kids Bedroom</p>
+        </div>
+    </div>
+</section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="container py-5 bg-light rounded animate__animated animate__fadeInUp">
+        <h2 class="text-center mb-4 text-primary">Testimonials</h2>
+        <div class="testimonial-card">
+            <p>"S.K Interiors transformed our home into a modern living space. Highly recommend their service!"</p>
+            <small>- Shantanu Banerjee</small>
+        </div>
+        <div class="testimonial-card">
+            <p>"Professional, timely, and high-quality materials. Truly a team that crafts dreams into reality."</p>
+            <small>- Shukanta Chatterjee</small>
+        </div>
+    </section>
+
+    <!-- Clients Section -->
+    <!-- Testimonials Section -->
+<section id="testimonials" class="container py-5">
+    <h2 class="text-center mb-5">Extravagance ko dikhane mein waqt aur paisa barbaad karne ke bajaye, humne apne space ko aisa design kiya jo har mehmaan ko subtle sophistication ka ehsaas dilaye.</h2>
+    <div class="row g-4 justify-content-center">
+
+        <!-- Testimonial 1 -->
+        <div class="col-md-4 text-center">
+            <div class="card shadow-sm">
+                <div class="position-relative">
+                    <img src="MrBanerjee.jpeg" class="card-img-top rounded" alt="P. Manikandan & Kruthhikka">
+                    <a href="#" class="play-button position-absolute top-50 start-50 translate-middle">
+                        <i class="bi bi-play-circle-fill" style="font-size: 3rem; color: white;"></i>
+                    </a>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Shobhan Bandyopadhyay</h5>
+                    <p class="text-muted">Belgharia,Kolkata</p>
+                    <p class="card-text">“Mr. Bandyopadhyay was deeply impressed by the expertise and professionalism of the designers at SK Interiors, who demonstrated a remarkable ability to understand and translate his vision for the home. SK Interiors ensured that every aspect was meticulously customized to align with the family's unique preferences and comfort. Schedule your complimentary consultation today.”</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Testimonial 2 -->
+        <div class="col-md-4 text-center">
+            <div class="card shadow-sm">
+                <div class="position-relative">
+                    <img src="MrChatterjee.jpeg" class="card-img-top rounded" alt="Anitha & Mahendiran">
+                    <a href="#" class="play-button position-absolute top-50 start-50 translate-middle">
+                        <i class="bi bi-play-circle-fill" style="font-size: 3rem; color: white;"></i>
+                    </a>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Subham Chattopadhyay</h5>
+                    <p class="text-muted">Hinjawadi phase 2,Pune,Maharastra</p>
+                    <p class="card-text">“SK Interiors transformed Mr. Chattopadhyay’s dream home into reality, precisely as he had envisioned it. After thorough research, he selected SK Interiors for offering the most competitive pricing and superior quality. The SK Interiors team delivered all requirements ahead of schedule while maintaining the highest standards of craftsmanship and attention to detail.”</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Testimonial 3 -->
+        <div class="col-md-4 text-center">
+            <div class="card shadow-sm">
+                <div class="position-relative">
+                    <img src="MrRoy.jpeg" class="card-img-top rounded" alt="Mr Kanagasabai">
+                    <a href="#" class="play-button position-absolute top-50 start-50 translate-middle">
+                        <i class="bi bi-play-circle-fill" style="font-size: 3rem; color: white;"></i>
+                    </a>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Mr Pikon Roy</h5>
+                    <p class="text-muted">Shyamnagar,Kolkata</p>
+                    <p class="card-text">“Mr. Roy and his family entrusted SK Interiors with the responsibility of creating a home that would thoughtfully address the needs of every family member, and the team delivered beyond expectations. Their vision of a serene and elegantly understated home was brought to life with the help of seasoned designers using advanced 3D visualization tools, allowing them to experience exactly how their living space would look and feel before the transformation began.”</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- CSS for Play Button -->
+<style>
+    .play-button {
+        cursor: pointer;
+        transition: transform 0.3s ease;
+    }
+    .play-button:hover {
+        transform: scale(1.1);
+    }
+</style>
+
+
+    <!-- About Section -->
+    <section id="about" class="container py-5 animate__animated animate__fadeInUp">
+        <h2 class="text-center mb-4 text-primary">About Us</h2>
+        <p class="text-center">
+            At S.K Interiors, we are dedicated to providing the best quality materials and craftsmanship in the industry. Our expertise spans false ceiling materials, plywood, and mika sheets. We also take up contracting work, ensuring that every project reflects excellence, durability, and style. We believe in turning your dream spaces into reality with trust and professionalism.
+        </p>
+    </section>
+
+  <!-- New WhatsApp Contact Section -->
+<section id="contact" class="whatsapp-contact animate__animated animate__fadeInUp">
+    <i class="bi bi-whatsapp"></i>
+    <h4>Contact us via WhatsApp</h4>
+    <p>Ask us anything w.r.t your dream home 24*7!</p>
+    <a href="https://wa.me/917003679547?text=Welcome%20to%20SK%20Interiors!!%20Please%20let%20us%20know%20you%20queries%20with%20your%20details(Name,%20Mobile%20Number,%20Email%20address)..%20We'll%20assist%20you%20ASAP." target="_blank" class="btn btn-light btn-sm mt-2">Chat Now</a>
+</section>
+
+<!-- Footer -->
+<footer class="animate__animated animate__fadeInUp">
+    &copy; 2025 S.K Interiors. All rights reserved.
+</footer>
+
+<!-- WhatsApp Floating Button -->
+<a href="https://wa.me/917003247054?text=Welcome%20to%20SK%20Interiors!!%20Please%20let%20us%20know%20you%20queries%20with%20your%20details(Name,%20Mobile%20Number,%20Email%20address)..%20We'll%20assist%20you%20ASAP." target="_blank" class="whatsapp-link">
+    <i class="bi bi-whatsapp"></i>
+</a>
+
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/917003247054" target="_blank" class="whatsapp-link">
+        <i class="bi bi-whatsapp"></i>
+    </a>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
